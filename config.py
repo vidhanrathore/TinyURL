@@ -14,7 +14,7 @@ MYSQL_PORT = os.getenv('MYSQL_PORT')
 
 DB_CONFIG = {
     "host": MYSQL_HOST,
-    "port": MYSQL_PORT,
+    "port": 28271,
     "user": MYSQL_USER,
     "password": MYSQL_PASSWORD,
     "db": MYSQL_DB,
