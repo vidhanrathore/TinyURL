@@ -12,9 +12,9 @@ mysql = MySQL()
 def create_app():
     app = Flask(__name__)
     app.secret_key = os.getenv('SECRET_KEY')
-    app.config.from_object('config.DB_CONFIG')
+    # app.config.from_object('config.DB_CONFIG')
 
-    mysql.init_app(app)
+    # mysql.init_app(app)
 
     from .routes import main
     app.register_blueprint(main)
